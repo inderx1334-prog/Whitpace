@@ -1,0 +1,115 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding-top: 16px;
+    background: #043873;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 28px;
+        color: #fff;
+        text-decoration: none;
+
+        @media (max-width: 320px) {
+            gap: 7px;
+            font-size: 19px;
+
+            svg {
+                width: 26px;
+                height: 21px;
+            }
+        }
+    }
+
+
+    &__menu {
+        display: flex;
+        gap: 76px;
+    }
+
+    &__nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        @media (max-width: 1152px) {
+            display: none;
+        }
+    }
+    
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 128%;
+    }
+
+    &__button-section {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    &__login-button {
+        background: #ffe492;
+        border: 1px solid #ffe492;
+        color: #043873;
+        font-weight: 500;
+        border-radius: 8px;
+        font-size: 18px;
+        padding: 16px 40px;
+        line-height: 128%;
+        letter-spacing: -0.02em;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__try-button {
+        border-radius: 8px;
+        padding: 16px 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 128%;
+        letter-spacing: -0.02em;
+        color: #fff;
+        background: #4f9cf9;
+        border: 2px solid #4f9cf9;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__burger-btn {
+        display: none;
+
+        @media (max-width: 1152px) {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: transparent;
+            border: none;
+        }
+    }
+
+    &__burger-span {
+        display: block;
+        width: 42px;
+        height: 2px;
+        background-color: #fff;
+    }
+}
