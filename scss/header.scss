@@ -1,7 +1,6 @@
 .header {
     position: fixed;
     display: flex;
-    align-items: center;
     height: 92px;
     background: #043873;
     top: 0;
@@ -18,7 +17,8 @@
     
     &__container {
         display: flex;
-        justify-content: center;
+        width: 100%;
+        align-items: center;
     }
     
     &__logo {
@@ -59,11 +59,14 @@
         line-height: 128%;
         display: flex;
         align-items: center;
-        gap: 10px;
+
+        svg {
+            margin-left: 10px;
+        }
     }
     
     &__login-button {
-        margin-left: 75px;
+        margin-left: 60px;
         width: 126px;
         height: 60px;
         background: #ffe492;

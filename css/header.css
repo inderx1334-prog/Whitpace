@@ -1,7 +1,6 @@
 .header {
   position: fixed;
   display: flex;
-  align-items: center;
   height: 92px;
   background: #043873;
   top: 0;
@@ -20,7 +19,8 @@
 }
 .header__container {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  align-items: center;
 }
 .header__logo {
   display: flex;
@@ -59,10 +59,12 @@
   line-height: 128%;
   display: flex;
   align-items: center;
-  gap: 10px;
+}
+.header__link svg {
+  margin-left: 10px;
 }
 .header__login-button {
-  margin-left: 75px;
+  margin-left: 60px;
   width: 126px;
   height: 60px;
   background: #ffe492;
