@@ -1,15 +1,24 @@
 .header {
     position: fixed;
-    width: 100%;
-    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: 92px;
+    background: #043873;
     top: 0;
     left: 0;
-    padding-top: 16px;
-    background: #043873;
+    width: 100%;
+
+    @media (max-width:768px) {
+        height: 66px;
+    }
+
+    @media (max-width:320px) {
+        height: 56px;
+    }
     
     &__container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     
     &__logo {
@@ -32,16 +41,10 @@
         }
     }
 
-
     &__menu {
         display: flex;
-        gap: 76px;
-    }
-
-    &__nav-menu {
-        display: flex;
-        align-items: center;
         gap: 32px;
+        margin-left: auto;
 
         @media (max-width: 1152px) {
             display: none;
@@ -54,40 +57,47 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 128%;
-    }
-
-    &__button-section {
         display: flex;
         align-items: center;
-        gap: 24px;
+        gap: 10px;
     }
     
     &__login-button {
+        margin-left: 75px;
+        width: 126px;
+        height: 60px;
         background: #ffe492;
         border: 1px solid #ffe492;
         color: #043873;
         font-weight: 500;
         border-radius: 8px;
         font-size: 18px;
-        padding: 16px 40px;
         line-height: 128%;
-        letter-spacing: -0.02em;
 
+        @media (max-width: 1152px) {
+            margin-left: auto;
+        }
+        
         @media (max-width: 768px) {
             display: none;
         }
     }
 
     &__try-button {
+        margin-left: 24px;
         border-radius: 8px;
-        padding: 16px 24px;
+        width: 227px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         font-weight: 500;
         font-size: 18px;
         line-height: 128%;
-        letter-spacing: -0.02em;
         color: #fff;
         background: #4f9cf9;
-        border: 2px solid #4f9cf9;
+        border: 0px;
 
         @media (max-width: 768px) {
             display: none;
@@ -100,9 +110,15 @@
         @media (max-width: 1152px) {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 12px;
             background: transparent;
             border: none;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: auto;
         }
     }
 

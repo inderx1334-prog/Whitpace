@@ -1,41 +1,12 @@
 .hero {
-  padding-top: 232px;
-  padding-bottom: 140px;
+  padding: 140px 0;
   background: #043873;
-  overflow: hidden;
-}
-@media (max-width: 1400px) {
-  .hero {
-    padding-top: 193px;
-    padding-bottom: 100px;
-  }
 }
 .hero__container {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.hero__container > svg {
-  position: absolute;
-  left: -200px;
-  top: 48px;
-}
-@media (max-width: 1400px) {
-  .hero__container > svg {
-    width: 1400px;
-    height: 433px;
-    left: -39px;
-    top: 47px;
-  }
-}
-@media (max-width: 1152px) {
-  .hero__container > svg {
-    width: 1152px;
-    height: 423px;
-    left: -8px;
-    top: -5px;
-  }
 }
 @media (max-width: 768px) {
   .hero__container {
@@ -44,10 +15,7 @@
   }
 }
 .hero__content {
-  padding: 94px 0;
   max-width: 656px;
-  position: relative;
-  z-index: 1;
 }
 @media (max-width: 1400px) {
   .hero__content {
