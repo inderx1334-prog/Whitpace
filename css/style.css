@@ -108,7 +108,7 @@ body .container {
   font-size: 18px;
   line-height: 128%;
 }
-@media (max-width: 1152px) {
+@media (max-width: 1440px) {
   .header__login-button {
     margin-left: auto;
   }
