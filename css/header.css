@@ -3,8 +3,6 @@
   display: flex;
   height: 92px;
   background: #043873;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 @media (max-width: 768px) {
@@ -74,8 +72,19 @@
   border-radius: 8px;
   font-size: 18px;
   line-height: 128%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.header__login-button:hover {
+  border: 1px solid #c8ab54;
+  background: #c8ab54;
 }
 @media (max-width: 1440px) {
+  .header__login-button {
+    margin-left: clamp(5px, 24.56vw - 278.6px, 75px);
+  }
+}
+@media (max-width: 1152px) {
   .header__login-button {
     margin-left: auto;
   }
@@ -100,6 +109,12 @@
   color: #fff;
   background: #4f9cf9;
   border: 0px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.header__try-button:hover {
+  border: 1px solid #85b8f7;
+  background: #85b8f7;
 }
 @media (max-width: 768px) {
   .header__try-button {
