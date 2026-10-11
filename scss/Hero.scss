@@ -82,6 +82,11 @@
             width: 232px;
             height: 70px;
         }
+
+        &:hover {
+            border: 1px solid #85b8f7;
+            background: #85b8f7;
+        }
     }
 
     &__image-square {

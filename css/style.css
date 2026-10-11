@@ -269,6 +269,10 @@ body .container {
     height: 70px;
   }
 }
+.hero__button:hover {
+  border: 1px solid #85b8f7;
+  background: #85b8f7;
+}
 .hero__image-square {
   width: 56%;
   height: 549px;
