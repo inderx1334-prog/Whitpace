@@ -4,6 +4,7 @@
     background-image: url("/images/hero/Element.svg");
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
     
     &__flex {
         display: flex;

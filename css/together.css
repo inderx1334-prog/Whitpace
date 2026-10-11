@@ -1,0 +1,55 @@
+.together {
+  padding-top: 100px;
+}
+.together__flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.together__content {
+  padding-left: 100px;
+  width: 670px;
+}
+.together__title {
+  font-weight: 700;
+  font-size: 72px;
+  color: #212529;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.together__title span {
+  position: relative;
+  z-index: 0;
+}
+.together__image {
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  left: 0;
+  top: 57px;
+}
+.together__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #212529;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.together__button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  width: 201px;
+  height: 63px;
+  background: #4F9CF9;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 128%;
+  color: #fff;
+}
+
+/*# sourceMappingURL=together.css.map */
