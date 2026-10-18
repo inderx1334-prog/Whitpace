@@ -1,6 +1,16 @@
 .management {
-  padding-top: 140px;
+  padding: 140px 0;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .management {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 320px) {
+  .management {
+    padding: 80px 0;
+  }
 }
 .management__flex {
   display: flex;
@@ -13,32 +23,24 @@
   }
 }
 .management__content {
-  max-width: 672px;
+  max-width: 742px;
   padding-right: 60px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 }
 @media (max-width: 1440px) {
   .management__content {
-    max-width: 617px;
-  }
-}
-@media (max-width: 1440px) {
-  .management__content {
-    max-width: 617px;
+    max-width: 641px;
   }
 }
 @media (max-width: 1152px) {
   .management__content {
-    max-width: 528px;
+    max-width: 530px;
     padding-right: 92px;
   }
 }
 @media (max-width: 768px) {
   .management__content {
     max-width: 728px;
-    align-items: center;
     text-align: center;
     padding-right: 0;
   }
@@ -109,10 +111,10 @@
   margin-bottom: 60px;
 }
 .management__button {
-  display: flex;
-  gap: 10px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   border-radius: 6px;
   width: 201px;
   height: 63px;
@@ -121,14 +123,45 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 128%;
+  letter-spacing: -0.02em;
   color: #fff;
 }
-.management__image-svg {
+.management__button:hover {
+  border: 1px solid #85b8f7;
+  background: #85b8f7;
+}
+.management__lines {
   position: absolute;
   z-index: -1;
-  left: 0;
   left: -388px;
   top: 126px;
+}
+@media (max-width: 1440px) {
+  .management__lines {
+    left: -350px;
+    top: -138px;
+  }
+}
+@media (max-width: 1152px) {
+  .management__lines {
+    width: 245px;
+    left: -135px;
+    top: -184px;
+  }
+}
+@media (max-width: 768px) {
+  .management__lines {
+    width: 356px;
+    left: -196px;
+    top: -150px;
+  }
+}
+@media (max-width: 320px) {
+  .management__lines {
+    width: 169px;
+    left: -80px;
+    top: -170px;
+  }
 }
 .management__image-square {
   width: 100%;

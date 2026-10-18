@@ -1,14 +1,47 @@
 .together {
-  padding-top: 100px;
+  padding: 140px 0;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .together {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 320px) {
+  .together {
+    padding: 80px 0;
+  }
 }
 .together__flex {
   display: flex;
   align-items: center;
-  position: relative;
+}
+@media (max-width: 768px) {
+  .together__flex {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 .together__content {
-  padding-left: 100px;
-  width: 670px;
+  margin-left: 89px;
+}
+@media (max-width: 1440px) {
+  .together__content {
+    max-width: 590px;
+    margin-left: 160px;
+  }
+}
+@media (max-width: 1152px) {
+  .together__content {
+    max-width: 527px;
+    margin-left: 33px;
+  }
+}
+@media (max-width: 768px) {
+  .together__content {
+    margin-left: 0;
+    max-width: 728px;
+  }
 }
 .together__title {
   font-weight: 700;
@@ -16,6 +49,21 @@
   color: #212529;
   margin-top: 0;
   margin-bottom: 24px;
+}
+@media (max-width: 1152px) {
+  .together__title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .together__title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 320px) {
+  .together__title {
+    font-size: 36px;
+  }
 }
 .together__title span {
   position: relative;
@@ -28,28 +76,94 @@
   left: 0;
   top: 57px;
 }
+@media (max-width: 1152px) {
+  .together__image {
+    width: 260px;
+    height: 37px;
+    left: 0px;
+    top: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .together__image {
+    width: 210px;
+    height: 35px;
+    left: -5px;
+    top: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .together__image {
+    width: 150px;
+    height: 20px;
+    left: -5px;
+    top: 17px;
+  }
+}
 .together__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 167%;
+  letter-spacing: -0.02em;
   color: #212529;
   margin-top: 0;
   margin-bottom: 60px;
 }
 .together__button {
-  display: flex;
-  gap: 10px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   border-radius: 6px;
-  width: 201px;
+  width: 186px;
   height: 63px;
   background: #4F9CF9;
   border: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 128%;
+  letter-spacing: -0.02em;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .together__button {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .together__button {
+    margin-bottom: 80px;
+  }
+}
+.together__button:hover {
+  border: 1px solid #85b8f7;
+  background: #85b8f7;
+}
+.together__work-img {
+  width: 100%;
+  max-width: 710px;
+  height: auto;
+  min-width: 0;
+}
+@media (max-width: 1440px) {
+  .together__work-img {
+    max-width: 583px;
+  }
+}
+@media (max-width: 1152px) {
+  .together__work-img {
+    max-width: 528px;
+  }
+}
+@media (max-width: 768px) {
+  .together__work-img {
+    max-width: 454px;
+  }
+}
+@media (max-width: 320px) {
+  .together__work-img {
+    max-width: 279px;
+  }
 }
 
 /*# sourceMappingURL=together.css.map */
