@@ -1,0 +1,237 @@
+.footer {
+  padding-top: 140px;
+  padding-bottom: 32px;
+  background: #043873;
+  overflow: hidden;
+}
+.footer__top {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1152px) {
+  .footer__top {
+    gap: 46px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .footer__top {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__top {
+    text-align: center;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 80px;
+  }
+}
+.footer__logo {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .footer__logo {
+    font-size: 51px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__logo {
+    font-size: 28px;
+    justify-content: center;
+  }
+}
+.footer__text-begin {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  letter-spacing: -0.02em;
+  color: #f7f7ee;
+  max-width: 240px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .footer__text-begin {
+    max-width: 501px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__text-begin {
+    max-width: 254px;
+  }
+}
+.footer__main {
+  display: flex;
+  gap: 100px;
+}
+@media (max-width: 1152px) {
+  .footer__main {
+    gap: 46px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__main {
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .footer__main {
+    gap: 80px;
+  }
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: #ffe492;
+}
+.footer__end {
+  max-width: 259px;
+  margin-left: auto;
+}
+@media (max-width: 768px) {
+  .footer__end {
+    margin-left: 0;
+  }
+}
+.footer__sub-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+.footer__text-end {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  max-width: 244px;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+@media (max-width: 320px) {
+  .footer__text-end {
+    max-width: 194px;
+  }
+}
+.footer__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  width: 186px;
+  height: 60px;
+  background: #4F9CF9;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+@media (max-width: 320px) {
+  .footer__button {
+    margin: 0 auto;
+  }
+}
+.footer__button:hover {
+  border: 1px solid #85b8f7;
+  background: #85b8f7;
+}
+
+.copy {
+  border-top: 1px solid #2e4e73;
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .copy {
+    border-top: none;
+  }
+}
+@media (max-width: 320px) {
+  .copy {
+    flex-direction: column;
+  }
+}
+.copy__main {
+  display: flex;
+  gap: 60px;
+}
+@media (max-width: 768px) {
+  .copy__main {
+    gap: 52px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #2e4e73;
+  }
+}
+@media (max-width: 320px) {
+  .copy__main {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #2e4e73;
+  }
+}
+.copy__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.copy__end {
+  display: flex;
+  gap: 32px;
+}
+@media (max-width: 768px) {
+  .copy__end {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .copy__end {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
