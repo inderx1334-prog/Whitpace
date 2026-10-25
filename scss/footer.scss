@@ -3,6 +3,10 @@
     padding-bottom: 32px;
     background: #043873;
     overflow: hidden;
+
+    @media (max-width:320px) {
+        padding-top: 100px;
+    }
     
     &__top {
         display: flex;
