@@ -21,7 +21,6 @@
         max-width: 714px;
         height: 532px;
         background: #C4DEFD;
-        margin-right: 98px;
 
         @media (max-width: 1440px) {
             max-width: 670px;
@@ -47,6 +46,18 @@
         }
     }
 
+    &__content {
+        padding-left: 98px;
+
+        @media (max-width: 1440px) {
+            padding-left: 60px;
+        }
+
+        @media (max-width: 768px) {
+            padding-left: 0;
+        }
+    }
+    
     &__title {
         font-weight: 700;
         font-size: 72px;

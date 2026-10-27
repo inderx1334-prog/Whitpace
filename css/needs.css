@@ -22,7 +22,6 @@
   max-width: 714px;
   height: 532px;
   background: #C4DEFD;
-  margin-right: 98px;
 }
 @media (max-width: 1440px) {
   .needs__image-square {
@@ -49,6 +48,19 @@
   .needs__image-square {
     max-width: 288px;
     height: 215px;
+  }
+}
+.needs__content {
+  padding-left: 98px;
+}
+@media (max-width: 1440px) {
+  .needs__content {
+    padding-left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .needs__content {
+    padding-left: 0;
   }
 }
 .needs__title {

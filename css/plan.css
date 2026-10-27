@@ -66,17 +66,17 @@
 }
 @media (max-width: 768px) {
   .plan__image {
-    left: 10px;
+    left: -10px;
     top: 45px;
-    width: 230px;
+    width: 290px;
   }
 }
 @media (max-width: 320px) {
   .plan__image {
-    left: 80px;
-    top: 5px;
-    width: 195px;
-    height: 50px;
+    left: 0;
+    top: 30px;
+    width: 90px;
+    height: 25px;
   }
 }
 .plan__text {
@@ -110,16 +110,23 @@
   margin-bottom: 0;
 }
 .plan__item {
+  flex: 1 1 0;
+  min-width: 0;
   border: 1px solid #ffe492;
   border-radius: 10px;
   padding: 40px 44px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
 @media (max-width: 768px) {
   .plan__item {
-    width: 428px;
+    flex: 0 0 384px;
+  }
+}
+@media (max-width: 320px) {
+  .plan__item {
+    flex: 0 0 249px;
+    padding: 20px 20px;
   }
 }
 .plan__sub-title {
@@ -128,7 +135,7 @@
   line-height: 150%;
   color: #212529;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 .plan__price {
   font-weight: 700;
@@ -136,46 +143,26 @@
   letter-spacing: -0.02em;
   color: #212529;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 .plan__slogan {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 25px;
   font-size: 18px;
 }
-.plan__sub-list {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  list-style: none;
-  padding-left: 0;
-  max-width: 384px;
-}
-@media (max-width: 1440px) {
-  .plan__sub-list {
-    max-width: 336px;
-  }
-}
-@media (max-width: 1152px) {
-  .plan__sub-list {
-    max-width: 253px;
-  }
-}
-@media (max-width: 768px) {
-  .plan__sub-list {
-    max-width: 390px;
-  }
-}
-@media (max-width: 320px) {
-  .plan__sub-list {
-    max-width: 249px;
-  }
-}
 .plan__sub-item {
+  margin-top: 0;
+  margin-bottom: 28px;
   display: flex;
+  align-items: center;
   gap: 19px;
 }
-.plan__sub-item svg {
+.plan__sub-item::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url(../images/plan/Icon.svg) no-repeat center;
   flex-shrink: 0;
 }
 .plan__button {
@@ -188,17 +175,23 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #212529;
+  margin-top: -3px;
 }
 .plan__button:hover {
-  border: 1px solid #85b8f7;
-  background: #85b8f7;
+  border: 1px solid #ffe492;
+  background: #ffe492;
 }
 
 .personal {
   background: #043873;
   margin: 0;
   padding: 80px 44px;
-  border: none;
+  border-color: transparent;
+}
+@media (max-width: 320px) {
+  .personal {
+    padding: 20px 20px;
+  }
 }
 
 .pertitle {
@@ -219,6 +212,14 @@
   .pertext {
     font-size: 16px;
   }
+}
+
+.pertext::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: url(../images/plan/Icon1.svg) no-repeat;
+  flex-shrink: 0;
 }
 
 .perbutton {
