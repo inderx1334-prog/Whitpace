@@ -142,10 +142,15 @@
     }
 
     &__square-image {
+        width: 100%;
         max-width: 681px;
 
         @media (max-width: 1152px) {
             max-width: 562px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 513px;
         }
     }
 }

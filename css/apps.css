@@ -1,0 +1,137 @@
+.apps {
+  padding: 140px 0;
+  overflow: hidden;
+  background-color: #043873;
+  background-image: url("/images/apps/Element.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1152px) {
+  .apps {
+    background-position: center;
+  }
+}
+.apps__flex {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .apps__flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.apps__image-square {
+  width: 100%;
+  max-width: 582px;
+}
+@media (max-width: 1152px) {
+  .apps__image-square {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .apps__image-square {
+    margin-bottom: 100px;
+    width: 63%;
+  }
+}
+@media (max-width: 320px) {
+  .apps__image-square {
+    width: 286px;
+  }
+}
+.apps__content {
+  max-width: 798px;
+  padding-left: 100px;
+}
+@media (max-width: 1152px) {
+  .apps__content {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .apps__content {
+    padding-left: 0;
+  }
+}
+.apps__title {
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 24px;
+  max-width: 757px;
+}
+@media (max-width: 1440px) {
+  .apps__title {
+    max-width: 640px;
+  }
+}
+@media (max-width: 1152px) {
+  .apps__title {
+    max-width: 460px;
+    font-size: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .apps__title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 320px) {
+  .apps__title {
+    font-size: 36px;
+  }
+}
+.apps__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 60px;
+  max-width: 798px;
+}
+@media (max-width: 1440px) {
+  .apps__text {
+    max-width: 640px;
+  }
+}
+@media (max-width: 1152px) {
+  .apps__text {
+    max-width: 460px;
+  }
+}
+.apps__button {
+  border-radius: 8px;
+  width: 194px;
+  height: 63px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 128%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  background-color: #4F9CF9;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 2s;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .apps__button {
+    width: 205px;
+  }
+}
+.apps__button:hover {
+  border: 1px solid #85b8f7;
+  background: #85b8f7;
+}
+
+/*# sourceMappingURL=apps.css.map */

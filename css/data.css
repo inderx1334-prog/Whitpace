@@ -150,11 +150,17 @@
   background: #85b8f7;
 }
 .data__square-image {
+  width: 100%;
   max-width: 681px;
 }
 @media (max-width: 1152px) {
   .data__square-image {
     max-width: 562px;
+  }
+}
+@media (max-width: 768px) {
+  .data__square-image {
+    max-width: 513px;
   }
 }
 
