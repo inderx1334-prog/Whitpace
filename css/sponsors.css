@@ -1,0 +1,145 @@
+.sponsors {
+  padding: 140px 0;
+  overflow: hidden;
+}
+@media (max-widht: 320px) {
+  .sponsors {
+    padding: 80px 0;
+  }
+}
+.sponsors__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 216px;
+}
+@media (max-width: 1440px) {
+  .sponsors__content {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .sponsors__content {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+.sponsors__title {
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #212529;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+@media (max-width: 1152px) {
+  .sponsors__title {
+    font-size: 64px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors__title {
+    font-size: 36px;
+  }
+}
+.sponsors__title span {
+  position: relative;
+  z-index: 0;
+}
+.sponsors__image {
+  width: 323px;
+  height: 42px;
+  position: absolute;
+  right: -32px;
+  top: 55px;
+  z-index: -1;
+}
+@media (max-width: 1440px) {
+  .sponsors__image {
+    top: 66px;
+  }
+}
+@media (max-width: 1152px) {
+  .sponsors__image {
+    width: 290px;
+    right: -20px;
+    top: 58px;
+  }
+}
+@media (max-width: 768px) {
+  .sponsors__image {
+    width: 290px;
+    height: 45px;
+    top: 48px;
+    right: -30px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors__image {
+    width: 170px;
+    height: 23px;
+    top: 36px;
+    right: -20px;
+  }
+}
+.sponsors__img_apple {
+  max-width: 55px;
+}
+.sponsors__img_microsoft {
+  max-width: 287px;
+}
+@media (max-width: 1152px) {
+  .sponsors__img_microsoft {
+    max-width: 24%;
+  }
+}
+@media (max-width: 768px) {
+  .sponsors__img_microsoft {
+    max-width: 287px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors__img_microsoft {
+    max-width: 213px;
+  }
+}
+.sponsors__img_slack {
+  max-width: 280px;
+}
+@media (max-width: 1152px) {
+  .sponsors__img_slack {
+    max-width: 24%;
+  }
+}
+@media (max-width: 768px) {
+  .sponsors__img_slack {
+    max-width: 280px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors__img_slack {
+    max-width: 192px;
+  }
+}
+.sponsors__img_google {
+  max-width: 211px;
+}
+@media (max-width: 1152px) {
+  .sponsors__img_google {
+    max-width: 18%;
+  }
+}
+@media (max-width: 768px) {
+  .sponsors__img_google {
+    max-width: 211px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors__img_google {
+    max-width: 140px;
+  }
+}
+
+/*# sourceMappingURL=sponsors.css.map */

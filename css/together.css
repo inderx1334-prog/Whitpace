@@ -125,6 +125,8 @@
   line-height: 128%;
   letter-spacing: -0.02em;
   color: #fff;
+  cursor: pointer;
+  transition: all 2s;
 }
 @media (max-width: 768px) {
   .together__button {

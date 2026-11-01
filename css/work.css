@@ -123,6 +123,8 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
+  transition: all 2s;
 }
 @media (max-width: 768px) {
   .work__button {

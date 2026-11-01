@@ -80,6 +80,8 @@
   color: #fff;
   background: #4f9cf9;
   border: 1px solid #4f9cf9;
+  cursor: pointer;
+  transition: all 2s;
 }
 @media (max-width: 768px) {
   .hero__button {

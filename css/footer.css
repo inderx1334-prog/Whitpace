@@ -166,6 +166,8 @@
   line-height: 125%;
   letter-spacing: -0.02em;
   color: #fff;
+  cursor: pointer;
+  transition: all 2s;
 }
 @media (max-width: 320px) {
   .footer__button {

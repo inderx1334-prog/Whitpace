@@ -172,6 +172,7 @@
   color: #212529;
   margin-top: -3px;
   cursor: pointer;
+  transition: all 2s;
 }
 .plan__button:hover {
   border: 1px solid #ffe492;
