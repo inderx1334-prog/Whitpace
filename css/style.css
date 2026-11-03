@@ -2215,12 +2215,18 @@ body .container {
     display: none;
   }
 }
+@media (max-width: 320px) {
+  .clients__title {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212529;
+    text-align: center;
+  }
+}
 .clients__title span {
   position: relative;
   z-index: 0;
-}
-.clients__lowtitle {
-  display: none;
 }
 @media (max-width: 768px) {
   .clients__lowtitle {
@@ -2236,6 +2242,11 @@ body .container {
     z-index: 0;
   }
 }
+@media (max-width: 320px) {
+  .clients__lowtitle {
+    display: none;
+  }
+}
 .clients__image {
   width: 258px;
   height: 44px;
@@ -2244,11 +2255,31 @@ body .container {
   position: absolute;
   z-index: -1;
 }
+@media (max-width: 1440px) {
+  .clients__image {
+    width: 200px;
+    left: 158px;
+  }
+}
+@media (max-width: 1152px) {
+  .clients__image {
+    width: 160px;
+    left: 145px;
+  }
+}
+@media (max-width: 320px) {
+  .clients__image {
+    width: 140px;
+    left: 18px;
+    top: 20px;
+    height: 22px;
+  }
+}
 .clients__smallimage {
-  width: 258px;
-  height: 44px;
+  width: 218px;
+  height: 30px;
   left: -20px;
-  top: 25px;
+  top: 40px;
   position: absolute;
   z-index: -1;
 }
@@ -2275,6 +2306,7 @@ body .container {
   .clients__list {
     display: flex;
     justify-content: flex-start;
+    margin-top: 60px;
   }
 }
 .clients__item {
@@ -2296,6 +2328,13 @@ body .container {
 @media (max-width: 1440px) {
   .clients__item_blue {
     padding: 60px 17px 60px 24px;
+  }
+}
+@media (max-width: 320px) {
+  .clients__item_blue {
+    width: 248px;
+    flex-shrink: 0;
+    padding: 20px;
   }
 }
 @media (max-width: 320px) {
@@ -2387,6 +2426,11 @@ body .container {
   margin-top: 0;
   margin-bottom: 15px;
 }
+@media (max-width: 320px) {
+  .clients__subtitle {
+    font-size: 18px;
+  }
+}
 .clients__desctext_black {
   font-weight: 400;
   font-size: 16px;
@@ -2395,6 +2439,13 @@ body .container {
   color: #212529;
   margin-top: 0;
   margin-bottom: 0;
+}
+@media (max-width: 320px) {
+  .clients__desctext_black {
+    font-size: 18px;
+    line-height: 167%;
+    color: #212529;
+  }
 }
 .clients__desctext_white {
   font-weight: 400;
