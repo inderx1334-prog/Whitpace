@@ -2443,6 +2443,12 @@ body .container {
     max-width: 293px;
   }
 }
+@media (max-width: 320px) {
+  .clients__text {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
 .clients__text_white {
   color: #FFFFFF;
 }
@@ -2457,11 +2463,11 @@ body .container {
     gap: 24px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 800px) {
   .clients__card {
-    gap: 0;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0;
   }
 }
 .clients__portrait {
@@ -2550,7 +2556,6 @@ body .container {
 .clients__subitem {
   padding: 20px;
   border-radius: 10px;
-  width: 341px;
   box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
 }
@@ -2570,7 +2575,6 @@ body .container {
   height: 70px;
 }
 .clients__subtext {
-  width: 301px;
   font-weight: 400;
   font-size: 18px;
   line-height: 167%;
@@ -2578,6 +2582,12 @@ body .container {
   color: #01252a;
   margin-top: 35px;
   margin-bottom: 49px;
+  width: 341px;
+}
+@media (max-width: 400px) {
+  .clients__subtext {
+    width: 280px;
+  }
 }
 .clients__subtext_white {
   color: #fff;
