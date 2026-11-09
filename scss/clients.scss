@@ -16,6 +16,12 @@
         margin-bottom: 60px;
 
 
+        @media (max-width: 788px) {
+            max-width: 551px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         @media (max-width: 768px) {
             display: none;
         }
@@ -35,21 +41,22 @@
     }
 
     &__image {
-        width: 258px;
+        width: 242px;
         height: 44px;
-        left: -20px;
-        top: 25px;
+        left: 221px;
+        top: 16px;
         position: absolute;
         z-index: -1;
 
         @media (max-width: 1440px) {
-            width: 200px;
-            left: 158px;
+            width: 175px;
+            left: 179px;
         }
 
         @media (max-width: 1152px) {
-            width: 160px;
+            width: 147px;
             left: 145px;
+            top: 29px;
         }
 
         @media (max-width: 320px) {

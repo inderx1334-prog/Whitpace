@@ -71,6 +71,22 @@
     width: 290px;
   }
 }
+@media (max-width: 523px) {
+  .plan__image {
+    left: -10px;
+    top: 45px;
+    width: 260px;
+    height: 25px;
+  }
+}
+@media (max-width: 460px) {
+  .plan__image {
+    left: -14px;
+    top: 45px;
+    width: 150px;
+    height: 25px;
+  }
+}
 @media (max-width: 320px) {
   .plan__image {
     left: 0;

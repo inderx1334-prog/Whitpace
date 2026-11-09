@@ -98,6 +98,10 @@
             width: 630px;
             height: 75px;
         }
+
+        @media (max-width: 1231px) {
+            width: 250px;
+        }
         
         @media (max-width: 1152px) {
             left: 4px;
@@ -106,10 +110,39 @@
             height: 70px;
         }
 
+        @media (max-width: 1093px) {
+            width: 210px;
+        }
+
         @media (max-width: 768px) {
             left: 94px;
             top: 3px;
             width: 330px;
+            height: 50px;
+        }
+
+        @media (max-width: 730px) {
+            width: 300px;
+        }
+
+        @media (max-width: 676px) {
+            left: -222px;
+            top: 88px;
+            width: 330px;
+            height: 50px;
+        }
+
+        @media (max-width: 519px) {
+            left: 90px;
+            top: 14px;
+            width: 330px;
+            height: 50px;
+        }
+
+        @media (max-width: 364px) {
+            left: -67px;
+            top: 88px;
+            width: 300px;
             height: 50px;
         }
         

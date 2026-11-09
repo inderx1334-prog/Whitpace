@@ -50,6 +50,11 @@
     max-width: 604px;
   }
 }
+@media (max-width: 511px) {
+  .work__title {
+    max-width: 384px;
+  }
+}
 @media (max-width: 320px) {
   .work__title {
     font-size: 36px;
@@ -77,6 +82,14 @@
   }
 }
 @media (max-width: 768px) {
+  .work__image {
+    width: 230px;
+    height: 41px;
+    right: -45px;
+    top: 38px;
+  }
+}
+@media (max-width: 511px) {
   .work__image {
     width: 230px;
     height: 41px;

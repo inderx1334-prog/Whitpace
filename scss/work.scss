@@ -48,6 +48,10 @@
             max-width: 604px;
         }
 
+        @media (max-width:511px) {
+            max-width: 384px;
+        }
+
         @media (max-width: 320px){
             font-size: 36px;
         }
@@ -73,6 +77,13 @@
         }
 
         @media (max-width:768px) {
+            width: 230px;
+            height: 41px;
+            right: -45px;
+            top: 38px;
+        }
+
+        @media (max-width:511px) {
             width: 230px;
             height: 41px;
             right: -45px;

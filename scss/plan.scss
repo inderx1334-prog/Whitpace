@@ -66,6 +66,20 @@
             top: 45px;
             width: 290px;
         }
+
+        @media (max-width: 523px) {
+            left: -10px;
+            top: 45px;
+            width: 260px;
+            height: 25px;
+        }
+
+        @media (max-width: 460px) {
+            left: -14px;
+            top: 45px;
+            width: 150px;
+            height: 25px;
+        }
         
         @media (max-width: 320px) {
             left: 0;

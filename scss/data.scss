@@ -25,12 +25,28 @@
         margin-top: 0;
         margin-bottom: 24px;
 
+        @media (max-width: 1284px) {
+            max-width: 341px;
+        }
+
         @media (max-width: 1152px) {
+            max-width: 526px;
             font-size: 64px;
         }
 
+        @media (max-width: 1069px) {
+            max-width: 303px;
+        }
+
         @media (max-width: 768px) {
+            max-width: 728px;
             font-size: 54px;
+        }
+
+        @media (max-width: 414px) {
+            max-width: 255px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         @media (max-width: 320px) {
@@ -143,7 +159,9 @@
 
     &__square-image {
         width: 100%;
+        height: auto;
         max-width: 681px;
+        min-width: 0;
 
         @media (max-width: 1152px) {
             max-width: 562px;
