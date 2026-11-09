@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+
 </head>
 <body>
     <header class="header">
@@ -218,7 +218,7 @@
                          or boost workplace productivity,
                          Evernote has the right plan for you.
                     </p>
-                    <ul class="plan__list" id="plan-list" style="transform: translateX(0px);">
+                    <ul class="plan__list" id="plan-list">
                         <li class="plan__item">
                             <h3 class="plan__sub-title">Free</h3>
                             <p class="plan__price">$0</p>
@@ -292,6 +292,10 @@
                             <button class="plan__button">Get Started</button>
                         </li>
                     </ul>
+                    <div class="plan__buttons">
+                        <button class="plan__button" id="button-prev"> < Назад</button>
+                        <button class="plan__button" id="button-next"> > Вперёд </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -416,66 +420,66 @@
                     </span> 
                     users Say
                 </h2>
-                <ul class="clients__list">
+                <ul class="clients__list" id="clients-list">
                     <li class="clients__item">
                         <svg class="clients__svgitem" width="86" height="62" viewBox="0 0 86 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M85.9999 12.686L83.2409 0C63.3755 0.910025 49.605 9.17535 49.605 33.4821V61.4603H84.3104V26.2958H71.1666C71.1668 18.4966 76.0603 13.9093 85.9999 12.686Z" fill="#043873"/>
                             <path d="M36.3949 12.6863L33.6359 0.000366211C13.7705 0.910391 0 9.17594 0 33.4827V61.4609H34.7068V26.2962H21.5548C21.5548 18.4969 26.4483 13.9097 36.3949 12.6863Z" fill="#043873"/>
                         </svg>
-                        <p class="clients__text_black">
+                        <p class="clients__text">
                             Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
                         </p>
                         <div class="clients__card">
                             <img class="clients__portrait" src="images/clients/Avater.png" alt="image">
                             <div class="clients__description">
                                 <h3 class="clients__subtitle">Oberon Shaw, MCH</h3>
-                                <p class="clients__desctext_black">Head of Talent Acquisition, North America</p>
+                                <p class="clients__desctext">Head of Talent Acquisition, North America</p>
                             </div>
                         </div>
                     </li>
-                    <li class="clients__item_blue">
+                    <li class="clients__item clients__item_blue">
                         <svg class="clients__svgitem" width="86" height="62" viewBox="0 0 86 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M85.9999 12.686L83.2409 0C63.3755 0.910025 49.605 9.17535 49.605 33.4821V61.4603H84.3104V26.2958H71.1666C71.1668 18.4966 76.0603 13.9093 85.9999 12.686Z" fill="white"/>
                             <path d="M36.3949 12.6863L33.6359 0.000366211C13.7705 0.910391 0 9.17594 0 33.4827V61.4609H34.7068V26.2962H21.5548C21.5548 18.4969 26.4483 13.9097 36.3949 12.6863Z" fill="white"/>
                         </svg>
-                        <p class="clients__text_white">
+                        <p class="clients__text clients__text_white">
                             Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
                         </p>
                         <div class="clients__card">
                             <img class="clients__portrait" src="images/clients/Avater_nigger.png" alt="image">
                             <div class="clients__description">
                                 <h3 class="clients__subtitle">Oberon Shaw, MCH</h3>
-                                <p class="clients__desctext_white">Head of Talent Acquisition, North America</p>
+                                <p class="clients__desctext clients__desctext_white">Head of Talent Acquisition, North America</p>
                             </div>
                         </div>
                     </li>
-                    <li class="clients__item_blue">
+                    <li class="clients__item clients__item_blue">
                         <svg class="clients__svgitem" width="86" height="62" viewBox="0 0 86 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M85.9999 12.686L83.2409 0C63.3755 0.910025 49.605 9.17535 49.605 33.4821V61.4603H84.3104V26.2958H71.1666C71.1668 18.4966 76.0603 13.9093 85.9999 12.686Z" fill="white"/>
                             <path d="M36.3949 12.6863L33.6359 0.000366211C13.7705 0.910391 0 9.17594 0 33.4827V61.4609H34.7068V26.2962H21.5548C21.5548 18.4969 26.4483 13.9097 36.3949 12.6863Z" fill="white"/>
                         </svg>
-                        <p class="clients__text_white">
+                        <p class="clients__text clients__text_white">
                             Whitepate is designed as a collaboration tool for businesses that is a full project management solution.
                         </p>
                         <div class="clients__card">
                             <img class="clients__portrait" src="images/clients/Avater_pidor.png" alt="image">
                             <div class="clients__description">
                                 <h3 class="clients__subtitle">Oberon Shaw, MCH</h3>
-                                <p class="clients__desctext_white">Head of Talent Acquisition, North America</p>
+                                <p class="clients__desctext clients__desctext_white">Head of Talent Acquisition, North America</p>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <ul class="clients__sublist">
-                    <li class="clients__subitem_blue">
+                <ul class="clients__sublist" id="clients-sublist">
+                    <li class="clients__subitem clients__subitem_blue">
                         <img class="clients__subimage" src="images/clients/Avater 02.png" alt="image">
-                        <p class="clients__subtext_white">
+                        <p class="clients__subtext clients__subtext_white">
                             “If you haven’t tried EventSprout yet, you need to give it a shot for your next event.
                              It’s so easy and intuitive to get a new event setup and 
                             if you need any help their customer service is seriously amazing.”
                         </p>
                         <div class="clients__subcontent">
-                            <p class="clients__name_white">Jessie Owner</p>
+                            <p class="clients__name clients__name_white">Jessie Owner</p>
                             <svg width="103" height="15" viewBox="0 0 103 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#FFE492"/>
                                 <path d="M29.5 0L31.1839 5.18237H36.6329L32.2245 8.38525L33.9084 13.5676L29.5 10.3647L25.0916 13.5676L26.7755 8.38525L22.3671 5.18237H27.8161L29.5 0Z" fill="#FFE492"/>
@@ -483,7 +487,7 @@
                                 <path d="M73.5 0L75.1839 5.18237H80.6329L76.2245 8.38525L77.9084 13.5676L73.5 10.3647L69.0916 13.5676L70.7755 8.38525L66.3671 5.18237H71.8161L73.5 0Z" fill="#FFE492"/>
                                 <path d="M95.5 0L97.1839 5.18237H102.633L98.2245 8.38525L99.9084 13.5676L95.5 10.3647L91.0916 13.5676L92.7755 8.38525L88.3671 5.18237H93.8161L95.5 0Z" fill="#FFE492"/>
                             </svg>
-                            <p class="clients__description_white">Founder, XYZ Company</p>
+                            <p class="clients__description clients__description_white">Founder, XYZ Company</p>
                         </div>
                     </li>
                     <li class="clients__subitem">
@@ -505,15 +509,15 @@
                             <p class="clients__description">Founder, XYZ Company</p>
                         </div>
                     </li>
-                    <li class="clients__subitem_blue">
+                    <li class="clients__subitem clients__subitem_blue">
                         <img class="clients__subimage" src="images/clients/Avater 02(1).png" alt="image">
-                        <p class="clients__subtext_white">
+                        <p class="clients__subtext clients__subtext_white">
                             “If you haven’t tried EventSprout yet, you need to give it a shot for your next event.
                              It’s so easy and intuitive to get a new event setup and if you need any help their 
                              customer service is seriously amazing.”
                         </p>
                         <div class="clients__subcontent">
-                            <p class="clients__name_white">Jessie Owner</p>
+                            <p class="clients__name clients__name_white">Jessie Owner</p>
                             <svg width="103" height="15" viewBox="0 0 103 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.5 0L9.18386 5.18237H14.6329L10.2245 8.38525L11.9084 13.5676L7.5 10.3647L3.09161 13.5676L4.77547 8.38525L0.367076 5.18237H5.81614L7.5 0Z" fill="#FFE492"/>
                                 <path d="M29.5 0L31.1839 5.18237H36.6329L32.2245 8.38525L33.9084 13.5676L29.5 10.3647L25.0916 13.5676L26.7755 8.38525L22.3671 5.18237H27.8161L29.5 0Z" fill="#FFE492"/>
@@ -521,10 +525,68 @@
                                 <path d="M73.5 0L75.1839 5.18237H80.6329L76.2245 8.38525L77.9084 13.5676L73.5 10.3647L69.0916 13.5676L70.7755 8.38525L66.3671 5.18237H71.8161L73.5 0Z" fill="#FFE492"/>
                                 <path d="M95.5 0L97.1839 5.18237H102.633L98.2245 8.38525L99.9084 13.5676L95.5 10.3647L91.0916 13.5676L92.7755 8.38525L88.3671 5.18237H93.8161L95.5 0Z" fill="#FFE492"/>
                             </svg>
-                            <p class="clients__description_white">Founder, XYZ Company</p>
+                            <p class="clients__description clients__description_white">Founder, XYZ Company</p>
                         </div>
                     </li>
                 </ul>
+                <div class="clients__buttons">
+                    <button class="clients__switchbutton" id="button-left"> < Назад</button>
+                    <button class="clients__switchbutton" id="button-right"> > Вперёд </button>
+                </div>
+            </div>
+        </section>
+        <section class="today">
+            <div class="container">
+                <div class="today__flex">
+                    <h2 class="today__title">Try Whitepace today</h2>
+                    <p class="today__text">Get started for free. <br>Add your whole team as your needs grow.</p>
+                    <button class="today__button">
+                        Try Taskey free
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 7.5H14.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                            <path d="M7.5 0.5L14.5 7.5L7.5 14.5" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+                        </svg>
+                    </button>
+                    <p class="today__slogan">On a big team? Contact sales</p>
+                    <div class="today__list">
+                        <a class="today__link" href="#">
+                            <svg class="today__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_70_15680)">
+                                <path d="M46.4409 33.632C44.7904 25.3257 52.6745 20.4541 52.6745 20.4541C52.6745 20.4541 49.6028 16.01 44.4403 14.8667C39.2804 13.7209 36.6979 15.1525 34.1204 16.2262C31.5405 17.3025 30.2531 17.3025 30.2531 17.3025C26.53 17.3025 23.8083 13.3604 16.7148 15.1551C11.8278 16.3884 6.68328 22.0299 5.75378 28.763C4.82427 35.4987 6.8301 44.0934 10.6974 50.7545C14.5648 57.4207 18.5043 59.926 21.3004 59.9981C24.0967 60.0675 26.8878 57.9949 30.2531 57.4902C33.621 56.9906 35.6937 58.7107 38.9971 59.6402C42.2877 60.5672 43.4412 59.7072 47.2313 56.4834C51.0317 53.2597 54.4717 44.0137 54.4717 44.0137C54.4717 44.0137 48.0914 41.9434 46.4409 33.632Z" fill="white"/>
+                                <path d="M39.1337 9.49327C42.7899 5.76763 41.5514 0 41.5514 0C41.5514 0 36.4173 0.901211 32.9773 4.48015C29.5399 8.06172 30.1089 13.7186 30.1089 13.7186C30.1089 13.7186 35.4774 13.2165 39.1337 9.49327Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_70_15680">
+                                <rect width="60" height="60" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="today__link" href="#">
+                            <svg class="today__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 32.8943V50.371L24.9507 53.9539V32.8943H0Z" fill="white"/>
+                                <path d="M24.9507 6.0498L0 9.63264V27.1094H24.9507V6.0498Z" fill="white"/>
+                                <path d="M59.9996 27.1087V0.720703L30.7412 4.92012V27.1087H59.9996Z" fill="white"/>
+                                <path d="M30.7412 55.0829L59.9996 59.2781V32.8943H30.7412V55.0829Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a class="today__link" href="#">
+                            <svg class="today__img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_70_15692)">
+                                <path d="M8.32884 19.4355C7.29504 19.4355 6.4179 19.7961 5.69688 20.5171C4.97585 21.2381 4.61523 22.1033 4.61523 23.1131V38.6178C4.61523 39.6529 4.97575 40.5293 5.69688 41.2504C6.4179 41.9715 7.29504 42.3321 8.32884 42.3321C9.36188 42.3321 10.2337 41.9716 10.9435 41.2504C11.652 40.5294 12.0072 39.6529 12.0072 38.6178V23.1131C12.0072 22.1032 11.6467 21.2381 10.9255 20.5171C10.2044 19.7961 9.33866 19.4355 8.32884 19.4355Z" fill="white"/>
+                                <path d="M38.1846 5.51635L40.7448 0.793578C40.9128 0.480911 40.853 0.241148 40.5649 0.0725555C40.2521 -0.0728207 40.0118 0.000843825 39.8439 0.288341L37.2479 5.04887C34.9637 4.03894 32.5477 3.53305 30.0001 3.53305C27.4519 3.53305 25.0357 4.03905 22.7523 5.04887L20.1562 0.288341C19.9875 0.000843825 19.7472 -0.0721697 19.4352 0.0725555C19.1464 0.241908 19.0866 0.480911 19.2553 0.793578L21.8156 5.51635C19.2195 6.84025 17.1519 8.68403 15.6136 11.0517C14.0752 13.4207 13.3057 16.0095 13.3057 18.8226H46.6582C46.6582 16.0101 45.8886 13.4212 44.3503 11.0517C42.8118 8.68403 40.7562 6.84025 38.1846 5.51635ZM23.3831 12.3857C23.1062 12.6632 22.7755 12.8013 22.3911 12.8013C22.006 12.8013 21.682 12.6632 21.4178 12.3857C21.1535 12.1095 21.0213 11.7801 21.0213 11.3944C21.0213 11.0101 21.1535 10.68 21.4178 10.4032C21.682 10.1269 22.0068 9.98884 22.3911 9.98884C22.7755 9.98884 23.1062 10.1269 23.3831 10.4032C23.6593 10.6807 23.798 11.0101 23.798 11.3944C23.7973 11.7795 23.6586 12.1095 23.3831 12.3857ZM38.5809 12.3857C38.3161 12.6632 37.9914 12.8013 37.6077 12.8013C37.2224 12.8013 36.8919 12.6632 36.6155 12.3857C36.3388 12.1095 36.2007 11.7801 36.2007 11.3944C36.2007 11.0101 36.3388 10.68 36.6155 10.4032C36.8919 10.1269 37.2224 9.98884 37.6077 9.98884C37.9921 9.98884 38.316 10.1269 38.5809 10.4032C38.8454 10.6807 38.9774 11.0101 38.9774 11.3944C38.9774 11.7795 38.8453 12.1095 38.5809 12.3857Z" fill="white"/>
+                                <path d="M13.4492 44.1335C13.4492 45.2403 13.8336 46.1772 14.6025 46.9461C15.372 47.715 16.3089 48.0993 17.4149 48.0993H20.0834L20.1199 56.2853C20.1199 57.319 20.4804 58.1968 21.2015 58.9179C21.9225 59.639 22.7883 59.9996 23.7975 59.9996C24.8307 59.9996 25.7083 59.639 26.4295 58.9179C27.1506 58.1968 27.5111 57.3191 27.5111 56.2853V48.1001H32.4869V56.2853C32.4869 57.319 32.8473 58.1968 33.5684 58.9179C34.2895 59.639 35.1665 59.9996 36.2004 59.9996C37.2335 59.9996 38.1112 59.639 38.8323 58.9179C39.5535 58.1968 39.9139 57.3191 39.9139 56.2853V48.1001H42.6183C43.6998 48.1001 44.6247 47.7156 45.395 46.9467C46.1637 46.1779 46.5483 45.241 46.5483 44.1343V20.1189H13.4492V44.1335Z" fill="white"/>
+                                <path d="M51.6709 19.4355C50.6609 19.4355 49.7958 19.7907 49.0747 20.4992C48.3537 21.2089 47.9932 22.0807 47.9932 23.1131V38.6178C47.9932 39.6529 48.3536 40.5293 49.0747 41.2504C49.7958 41.9716 50.6616 42.3321 51.6709 42.3321C52.704 42.3321 53.5817 41.9716 54.3028 41.2504C55.0239 40.5293 55.3843 39.6529 55.3843 38.6178V23.1131C55.3843 22.0806 55.0239 21.2089 54.3028 20.4992C53.5817 19.7907 52.704 19.4355 51.6709 19.4355Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_70_15692">
+                                <rect width="60" height="60" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -633,5 +695,8 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="plan.js"></script>
+    <script src="clients.js"></script>
 </body>
 </html>

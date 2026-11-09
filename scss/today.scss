@@ -1,0 +1,123 @@
+.today {
+    padding-top: 140px;
+    padding-bottom: 32px;
+    background-color: #043873;
+
+    @media (max-width: 320px) {
+        padding-top: 100px;
+    }
+
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            text-align: left;
+            align-items: flex-start;
+        }
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: 72px;
+        letter-spacing: -0.02em;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 24px;
+        max-width: 608px;
+
+        @media (max-width: 768px) {
+            font-size: 54px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 40px;
+        }
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: -0.02em;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 40px;
+        max-width: 550px;
+
+        @media (max-width: 320px) {
+            font-size: 18px;
+        }
+    }
+    
+    &__button {
+        border-radius: 8px;
+        width: 218px;
+        height: 59px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 128%;
+        letter-spacing: -0.02em;
+        color: #fff;
+        background-color: #4F9CF9;
+        border: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: all 2s;
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        @media (max-width: 1440px) {
+            width: 241px;
+            height: 63px;
+        }
+
+        @media (max-width: 1152px) {
+            width: 241px;
+            height: 63px;
+        }
+        
+        @media (max-width:320px){
+            width: 225px;
+            height: 60px;
+        }
+
+         &:hover {
+            border: 1px solid #85b8f7;
+            background: #85b8f7;
+        }
+    }
+
+    &__slogan {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: -0.02em;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 40px;
+
+        @media (max-width: 320px) {
+            font-size: 18px;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__img {
+
+        @media (max-width: 320px) {
+            width: 35px;
+            height: 36px;
+        }
+    }
+}

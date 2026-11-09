@@ -100,13 +100,13 @@
         gap: 32px;
         list-style: none;
         padding-left: 0;
-        align-items: center;
+        align-self: center;
         margin-top: 0;
         margin-bottom: 0;
     }
 
     &__item {
-        width: 33.33%;
+        width: calc(100% - 64px)/3;
         min-width: 0;
         border: 1px solid #ffe492;
         border-radius: 10px;
@@ -117,6 +117,12 @@
         @media (max-width: 1024px) {
             width: 472px;
             box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 500px) {
+            width: 289px;
+            padding: 20px;
         }
     }
     
@@ -180,6 +186,16 @@
             background: #ffe492;
         }
     }
+
+    &__buttons {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: flex;
+            gap: 10px;
+            margin-top: 50px;
+        }
+    }
 }
 
 .personal {
@@ -231,4 +247,5 @@
         background: #85b8f7;
         }
 }
+
 
